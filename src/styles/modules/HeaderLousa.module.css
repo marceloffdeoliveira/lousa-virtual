@@ -1,0 +1,96 @@
+.lousaHeader {
+  width: 100%;
+  height: 75px;
+
+  display:flex;
+  background: #1a1a1a;
+}
+
+.headerLogo a {
+  font-size:2rem;
+  font-weight: bold;
+}
+
+.lousaHeader span {
+  width:100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.lousaUser {
+  position:relative;
+}
+
+.lousaHeader span svg {
+  margin-left:10px;
+}
+
+.lousaUser span img {
+  border-radius:8px;
+  width: 45px;
+  height:45px;
+  display: flex;
+  justify-content: center;
+}
+
+.lousaUser .userOptions{
+  background:#292929;
+
+  position:absolute;
+  right:0;
+
+  height:170px;
+  width:250px;
+  
+  margin-top:20px;
+  padding:1rem;
+
+  border-radius: 8px;
+
+  box-shadow: 4px 11px 17px 3px #00000026;
+}
+
+.lousaUser .userOptions::before {
+  content:'';
+  position:absolute;
+  border: 12px solid transparent;
+  border-color: transparent transparent #292929 transparent;
+  top:-24px;
+  right:37px;
+  
+}
+
+
+
+.lousaUser .userOptions a {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding:.5rem;
+  border-radius:8px;
+  transition: all .2s ease;
+  /* color:#DF2935; */
+}
+
+.lousaUser .userOptions a:hover {
+  opacity: 0.7;
+  background:#2e2e2e;
+}
+
+.lousaUser .userOptions a svg {
+  margin-right: 10px;
+  width: 24px;
+  height:24px;
+  fill:#DF2935;
+}
+
+@media (max-width:1410px){
+  .lousaHeader {
+    padding:0 20px;
+  }
+}

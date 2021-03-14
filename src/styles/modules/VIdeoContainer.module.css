@@ -1,0 +1,54 @@
+.videoWrapper {
+  display: flex;
+  
+  width: 100%;
+  min-width: 800px;
+  padding: 1rem;
+
+  background:#1a1a1a;
+  
+  border-radius:8px;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  min-height:500px;
+}
+
+.videoInfo {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoInfo h1 {
+  font-size: 22px;
+}
+
+.videoInfo .proximaLicao span {
+  margin-right: 10px;
+}
+
+.videoInfo .buttonAvancar {
+  background-color:#00ff4c;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.videoInfo .buttonAvancar:hover {
+  background-color:#00cf3e;
+}
+
+@media (max-width: 1400px){
+  .videoWrapper {
+    margin: 0 2rem;
+  }
+
+  .videoWrapper iframe {
+    width:90%;
+    height:auto;
+  }
+}
